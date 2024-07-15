@@ -1,15 +1,7 @@
 name: Build UI
 
 on:
-  workflow_call:
-    inputs:
-      release:
-        description: 'Make a release for the UI'
-        type: boolean
-        required: true
-    secrets:
-      CODECOV_TOKEN:
-        required: false
+  workflow_dispatch:
 
 permissions:
   contents: read
